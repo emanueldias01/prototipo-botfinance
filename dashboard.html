@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - BotFinance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="brand">
+            <span>BotFinance</span>
+        </div>
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="dashboard.html" class="nav-link active">
+                    <span class="nav-icon">📊</span> Visão Geral
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="assistente.html" class="nav-link">
+                    <span class="nav-icon">🤖</span> Assistente IA
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="financeiro.html" class="nav-link">
+                    <span class="nav-icon">💰</span> Financeiro
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <span class="nav-icon">📈</span> Relatórios
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <span class="nav-icon">🏦</span> Open Finance
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="header">
+            <div class="page-title">
+                <h2>Visão Geral</h2>
+                <p>Bem-vindo de volta, Emanuel!</p>
+            </div>
+            <div class="user-profile">
+                <span>Minha Empresa Ltda</span>
+                <div class="avatar">LM</div>
+            </div>
+        </header>
+
+        <div class="dashboard-grid">
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Saldo Total</span>
+                    <span>💰</span>
+                </div>
+                <div class="amount">R$ 48.250,00</div>
+                <div class="trend positive">▲ 12% vs mês anterior</div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Receitas (Jan)</span>
+                    <span style="color: var(--secondary-color)">⬇</span>
+                </div>
+                <div class="amount">R$ 15.400,00</div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Despesas (Jan)</span>
+                    <span style="color: var(--danger-color)">⬆</span>
+                </div>
+                <div class="amount">R$ 8.230,00</div>
+            </div>
+
+            <div class="card ai-card col-span-2">
+                <div class="card-header">
+                    <span class="card-title">✨ Insights do BotFinance</span>
+                </div>
+                <div class="insight-item">
+                    <span style="font-size: 1.5rem">💡</span>
+                    <div class="insight-content">
+                        <h4>Oportunidade de Economia</h4>
+                        <p>Identifiquei 3 assinaturas de software duplicadas este mês. Cancelando-as, você pode economizar <strong>R$ 450,00/mês</strong>. Deseja ver os detalhes?</p>
+                    </div>
+                </div>
+                <div class="insight-item">
+                    <span style="font-size: 1.5rem">⚠️</span>
+                    <div class="insight-content">
+                        <h4>Risco de Fluxo de Caixa</h4>
+                        <p>Atenção: Há uma previsão de saldo negativo para o dia 20/01 devido ao vencimento de fornecedores. Sugiro antecipar recebíveis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Contas Conectadas</span>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <div style="width: 30px; height: 30px; background: #ddd; border-radius: 50%;"></div>
+                            <div>
+                                <div style="font-weight: 600; font-size: 0.9rem;">Banco Inter</div>
+                                <div style="font-size: 0.75rem; color: #666;">**** 4432</div>
+                            </div>
+                        </div>
+                        <span style="font-weight: 600;">R$ 12.000</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <div style="width: 30px; height: 30px; background: #333; border-radius: 50%;"></div>
+                            <div>
+                                <div style="font-weight: 600; font-size: 0.9rem;">Nubank PJ</div>
+                                <div style="font-size: 0.75rem; color: #666;">**** 8891</div>
+                            </div>
+                        </div>
+                        <span style="font-weight: 600;">R$ 36.250</span>
+                    </div>
+                    <button style="width: 100%; padding: 8px; border: 1px dashed #ccc; background: none; color: #666; border-radius: 6px; cursor: pointer;">+ Conectar nova conta</button>
+                </div>
+            </div>
+
+            <div class="card col-span-3">
+                <div class="card-header">
+                    <span class="card-title">Fluxo de Caixa (Últimos 6 Meses)</span>
+                </div>
+                <div class="chart-container">
+                    <div class="bar-group">
+                        <div class="bar bar-income" style="height: 60%;"></div>
+                        <div class="month-label">Ago</div>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bar bar-income" style="height: 50%;"></div>
+                        <div class="month-label">Set</div>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bar bar-income" style="height: 75%;"></div>
+                        <div class="month-label">Out</div>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bar bar-expense" style="height: 80%; opacity: 0.6;"></div> <div class="month-label">Nov</div>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bar bar-income" style="height: 90%;"></div>
+                        <div class="month-label">Dez</div>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bar bar-income" style="height: 65%;"></div>
+                        <div class="month-label">Jan</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

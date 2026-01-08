@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Finance - BotFinance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="brand"><span>BotFinance</span></div>
+        <ul class="nav-links">
+            <li class="nav-item"><a href="dashboard.html" class="nav-link"><span class="nav-icon">📊</span> Visão Geral</a></li>
+            <li class="nav-item"><a href="assistente.html" class="nav-link"><span class="nav-icon">🤖</span> Assistente IA</a></li>
+            <li class="nav-item"><a href="financeiro.html" class="nav-link"><span class="nav-icon">💰</span> Financeiro</a></li>
+            <li class="nav-item"><a href="relatorios.html" class="nav-link"><span class="nav-icon">📈</span> Relatórios</a></li>
+            <li class="nav-item"><a href="openfinance.html" class="nav-link active"><span class="nav-icon">🏦</span> Open Finance</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="header">
+            <div class="page-title">
+                <h2>Conexões Bancárias</h2> <p>Gerencie suas integrações via Open Finance.</p>
+            </div>
+            <button class="btn-connect">
+                <span>+</span> Nova Conexão
+            </button>
+        </header>
+
+        <div class="security-badge">
+            <span style="font-size: 1.2rem">🔒</span>
+            <div>
+                <strong>Ambiente Seguro:</strong> Seus dados são criptografados e sincronizados apenas para leitura via APIs oficiais do Open Finance.
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="card col-span-2">
+                <div class="card-header">
+                    <span class="card-title">Instituições Conectadas</span>
+                </div>
+
+                <div class="bank-list">
+                    <div class="bank-card">
+                        <div style="display: flex; align-items: center;">
+                            <div class="bank-logo" style="background: #FF7A00; color: white;">I</div> <div class="bank-details">
+                                <h3>Banco Inter</h3>
+                                <p>Conta PJ • Final 4432</p>
+                            </div>
+                        </div>
+                        <div class="connection-status connected">
+                            <div class="status-dot"></div>
+                            <span>Sincronizado há 5 min</span>
+                            <button style="margin-left: 16px; border: none; background: none; color: var(--danger-color); cursor: pointer; font-size: 0.85rem;">Desconectar</button>
+                        </div>
+                    </div>
+
+                    <div class="bank-card">
+                        <div style="display: flex; align-items: center;">
+                            <div class="bank-logo" style="background: #820AD1; color: white;">N</div> <div class="bank-details">
+                                <h3>Nubank</h3>
+                                <p>Conta Corrente • Final 8891</p>
+                            </div>
+                        </div>
+                        <div class="connection-status connected">
+                            <div class="status-dot"></div>
+                            <span>Sincronizado há 12 min</span>
+                            <button style="margin-left: 16px; border: none; background: none; color: var(--danger-color); cursor: pointer; font-size: 0.85rem;">Desconectar</button>
+                        </div>
+                    </div>
+
+                    <div class="bank-card" style="opacity: 0.7;">
+                        <div style="display: flex; align-items: center;">
+                            <div class="bank-logo">B</div> <div class="bank-details">
+                                <h3>Bradesco Empresas</h3>
+                                <p>Conexão expirada</p>
+                            </div>
+                        </div>
+                        <div class="connection-status error">
+                            <div class="status-dot"></div>
+                            <span>Requer atenção</span>
+                            <button style="margin-left: 16px; border: 1px solid #E5E7EB; background: white; padding: 4px 12px; border-radius: 4px; cursor: pointer; font-size: 0.85rem;">Reconectar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Log de Sincronização</span>
+                </div>
+                <ul style="list-style: none;">
+                    <li style="padding: 12px 0; border-bottom: 1px solid #f3f4f6; font-size: 0.85rem;">
+                        <span style="font-weight: 600; color: var(--secondary-color);">✓ Sucesso</span><br>
+                        Importação de Extrato (Inter)<br>
+                        <span style="color: var(--text-muted); font-size: 0.75rem;">Hoje, 15:54</span>
+                    </li>
+                    <li style="padding: 12px 0; border-bottom: 1px solid #f3f4f6; font-size: 0.85rem;">
+                        <span style="font-weight: 600; color: var(--secondary-color);">✓ Sucesso</span><br>
+                        Importação de Extrato (Nubank)<br>
+                        <span style="color: var(--text-muted); font-size: 0.75rem;">Hoje, 15:47</span>
+                    </li>
+                    <li style="padding: 12px 0; font-size: 0.85rem;">
+                        <span style="font-weight: 600; color: var(--warning-color);">! Pendente</span><br>
+                        Conciliação Automática<br>
+                        <span style="color: var(--text-muted); font-size: 0.75rem;">Aguardando dados</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

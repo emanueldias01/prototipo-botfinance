@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financeiro - BotFinance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="brand"><span>BotFinance</span></div>
+        <ul class="nav-links">
+            <li class="nav-item"><a href="dashboard.html" class="nav-link"><span class="nav-icon">📊</span> Visão Geral</a></li>
+            <li class="nav-item"><a href="assistente.html" class="nav-link"><span class="nav-icon">🤖</span> Assistente IA</a></li>
+            <li class="nav-item"><a href="financeiro.html" class="nav-link active"><span class="nav-icon">💰</span> Financeiro</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><span class="nav-icon">📈</span> Relatórios</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><span class="nav-icon">🏦</span> Open Finance</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="header">
+            <div class="page-title">
+                <h2>Lançamentos Financeiros</h2>
+                <p>Gerencie suas contas a pagar e receber.</p>
+            </div>
+            <button style="background: var(--primary-color); color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer;">+ Novo Lançamento</button>
+        </header>
+
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">Próximos Vencimentos (Contas a Pagar)</span>
+            </div>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Vencimento</th>
+                            <th>Descrição</th>
+                            <th>Categoria (IA)</th> <th>Valor</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08/01/2026</td>
+                            <td>Servidor AWS</td>
+                            <td>Tecnologia</td>
+                            <td>R$ 450,00</td>
+                            <td><span class="status-badge status-pending">Pendente</span></td>
+                            <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>05/01/2026</td>
+                            <td>Aluguel Escritório</td>
+                            <td>Infraestrutura</td>
+                            <td>R$ 2.200,00</td>
+                            <td><span class="status-badge status-overdue">Atrasado</span></td> <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>02/01/2026</td>
+                            <td>Pagamento Fornecedor A</td>
+                            <td>Produtos</td>
+                            <td>R$ 1.500,00</td>
+                            <td><span class="status-badge status-paid">Pago</span></td>
+                            <td>...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="card">
+             <div class="card-header">
+                <span class="card-title">Previsão de Entradas (Contas a Receber)</span>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Previsão</th>
+                            <th>Cliente</th>
+                            <th>Valor</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>15/01/2026</td>
+                            <td>Cliente X - Contrato BPO</td>
+                            <td>R$ 5.000,00</td>
+                            <td><span class="status-badge status-pending">Aguardando</span></td>
+                        </tr>
+                         <tr>
+                            <td>20/01/2026</td>
+                            <td>Consultoria Tech</td>
+                            <td>R$ 3.200,00</td>
+                            <td><span class="status-badge status-pending">Aguardando</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

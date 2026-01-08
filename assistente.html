@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistente IA - BotFinance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="brand"><span>BotFinance</span></div>
+        <ul class="nav-links">
+            <li class="nav-item"><a href="dashboard.html" class="nav-link"><span class="nav-icon">📊</span> Visão Geral</a></li>
+            <li class="nav-item"><a href="assistente.html" class="nav-link active"><span class="nav-icon">🤖</span> Assistente IA</a></li>
+            <li class="nav-item"><a href="financeiro.html" class="nav-link"><span class="nav-icon">💰</span> Financeiro</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="header">
+            <div class="page-title">
+                <h2>Assistente Financeiro</h2>
+                <p>Tire dúvidas e receba análises estratégicas.</p>
+            </div>
+        </header>
+
+        <div class="chat-container">
+            <div class="chat-history">
+                
+                <div class="message bot">
+                    Olá, Luis! 👋 Analisei suas transações recentes. Notei que os gastos com fornecedores aumentaram 15% em relação ao mês passado. Gostaria de entender o motivo?
+                </div>
+
+                <div class="message user">
+                    Sim, por favor. E como está minha previsão de caixa para o final do mês?
+                </div>
+
+                <div class="message bot">
+                    <strong>1. Sobre os Fornecedores:</strong> O aumento veio principalmente da categoria "Matéria-prima", com dois pagamentos extras para a 'TechSuply Ltda'.<br><br>
+                    <strong>2. Previsão de Caixa (HU-10):</strong> Baseado nas contas a pagar cadastradas, seu saldo projetado para dia 31/01 é de <strong>R$ 12.500,00</strong>. Isso é positivo, mas recomendo cautela com novos investimentos até dia 15.
+                </div>
+
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" class="chat-input" placeholder="Digite sua pergunta (ex: 'Como reduzir meus custos?')...">
+                <button class="btn-send">Enviar</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

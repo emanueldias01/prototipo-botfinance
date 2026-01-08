@@ -312,3 +312,43 @@ td {
     color: var(--text-muted);
     margin-top: 8px;
 }
+
+.report-controls {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .select-input {
+            padding: 10px;
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            background: white;
+            color: var(--text-main);
+            outline: none;
+        }
+        .btn-export {
+            margin-left: auto;
+            background-color: white;
+            border: 1px solid #E5E7EB;
+            color: var(--text-main);
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+        }
+        .btn-export:hover { background-color: #f9fafb; }
+        
+        .report-summary {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px;
+            background: #F9FAFB;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .summary-item { text-align: center; }
+        .summary-label { font-size: 0.85rem; color: var(--text-muted); display: block; margin-bottom: 4px; }
+        .summary-value { font-size: 1.1rem; font-weight: 700; }

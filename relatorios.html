@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios - BotFinance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="brand"><span>BotFinance</span></div>
+        <ul class="nav-links">
+            <li class="nav-item"><a href="dashboard.html" class="nav-link"><span class="nav-icon">📊</span> Visão Geral</a></li>
+            <li class="nav-item"><a href="assistente.html" class="nav-link"><span class="nav-icon">🤖</span> Assistente IA</a></li>
+            <li class="nav-item"><a href="financeiro.html" class="nav-link"><span class="nav-icon">💰</span> Financeiro</a></li>
+            <li class="nav-item"><a href="relatorios.html" class="nav-link active"><span class="nav-icon">📈</span> Relatórios</a></li>
+            <li class="nav-item"><a href="openfinance.html" class="nav-link"><span class="nav-icon">🏦</span> Open Finance</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="header">
+            <div class="page-title">
+                <h2>Relatórios Estratégicos</h2> <p>Análise de desempenho e fechamento mensal.</p>
+            </div>
+        </header>
+
+        <div class="report-controls">
+            <select class="select-input">
+                <option>Janeiro 2026</option>
+                <option>Fevereiro 2026</option>
+                <option>Último Trimestre</option>
+                <option>Anual 2025</option>
+            </select>
+            <select class="select-input">
+                <option>Todos os Centros de Custo</option>
+                <option>Operacional</option>
+                <option>Marketing</option>
+            </select>
+            <button class="btn-export">
+                <span>⬇</span> Exportar PDF
+            </button>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="card col-span-3">
+                <div class="card-header">
+                    <span class="card-title">Demonstrativo de Resultado (DRE Simplificado) - Jan/2026</span>
+                </div>
+                
+                <div class="report-summary">
+                    <div class="summary-item">
+                        <span class="summary-label">Receita Bruta</span>
+                        <span class="summary-value" style="color: var(--secondary-color)">+ R$ 45.000,00</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Despesas Variáveis</span>
+                        <span class="summary-value" style="color: var(--danger-color)">- R$ 12.500,00</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Despesas Fixas</span>
+                        <span class="summary-value" style="color: var(--danger-color)">- R$ 8.000,00</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Lucro Operacional</span>
+                        <span class="summary-value" style="color: var(--primary-color)">= R$ 24.500,00</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Margem</span> <span class="summary-value">54%</span>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Categoria</th>
+                                <th>Realizado</th>
+                                <th>% da Receita</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Receitas de Serviços</td>
+                                <td>R$ 45.000,00</td>
+                                <td>100%</td>
+                                <td><span class="status-badge status-paid">Confirmado</span></td>
+                            </tr>
+                            <tr>
+                                <td>Pessoal e Salários</td>
+                                <td>R$ 15.000,00</td>
+                                <td>33%</td>
+                                <td><span class="status-badge status-paid">Confirmado</span></td>
+                            </tr>
+                            <tr>
+                                <td>Marketing e Vendas</td>
+                                <td>R$ 3.200,00</td>
+                                <td>7%</td>
+                                <td><span class="status-badge status-pending">Em aberto</span></td>
+                            </tr>
+                             <tr>
+                                <td>Impostos</td>
+                                <td>R$ 2.300,00</td>
+                                <td>5%</td>
+                                <td><span class="status-badge status-overdue">Provisão</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card col-span-2">
+                <div class="card-header">
+                    <span class="card-title">Composição de Despesas</span>
+                </div>
+                <div style="display: flex; gap: 20px; align-items: center; justify-content: center; height: 150px;">
+                    <div style="width: 150px; height: 150px; background: conic-gradient(var(--primary-color) 0% 60%, var(--secondary-color) 60% 85%, var(--warning-color) 85% 100%); border-radius: 50%;"></div>
+                    <ul style="list-style: none; font-size: 0.9rem;">
+                        <li style="margin-bottom: 8px;"><span style="color: var(--primary-color)">●</span> Pessoal (60%)</li>
+                        <li style="margin-bottom: 8px;"><span style="color: var(--secondary-color)">●</span> Operacional (25%)</li>
+                        <li><span style="color: var(--warning-color)">●</span> Outros (15%)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Ações</span>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px;">
+                    O mês de Janeiro ainda possui lançamentos pendentes.
+                </p>
+                <button style="width: 100%; background: var(--primary-color); color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer;">
+                    Realizar Pré-Fechamento
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
